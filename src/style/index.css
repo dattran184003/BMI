@@ -1,0 +1,71 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+:root{
+  --background-color: #f6f6f6;
+  --vigo-color: crimson;
+  --slider-color:#a3a3a3;
+  --input-number-color: #ebebeb;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.bmi-calculator{
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 20px;
+  height: 300px;
+  background-color: white;
+}
+.bmi-calculator-weight, .bmi-calculator-height{
+  margin-bottom:20px ;
+  width:100%;
+}
+.btn{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  width: 100%;
+  margin-bottom:10px ;
+  padding: 10px 30px;
+  transform: .2s;
+  border: none;
+  background-color: var(--vigo-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: .8;
+}
+.weight-slider, .height-slider {
+  width: 100%;
+  height: 1px;
+  border-radius:10px ;
+  background-color: var(--slider-color);
+  outline: none;
+}
+input[type=range]{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+input[type=range]:focus{
+  outline: none;
+}
+input[type=range]::-ms-track{
+  width: 100%;
+  cursor: pointer;
+}
+p{
+  text-align: center;
+}
